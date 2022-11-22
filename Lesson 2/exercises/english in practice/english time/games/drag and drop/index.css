@@ -1,0 +1,47 @@
+.droppable {
+    height: 10em;
+    border: 2px dashed #ffffff;
+}
+
+.draggable {
+    height: 6em;
+}
+
+.btn-sound {
+    position: absolute;
+}
+
+.bg-image {
+    background-image: url('./assets/img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+img {
+    object-fit: contain;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    border-radius: var(--border-radius);
+    height: 10em;
+}
+
+.card .btn-sound {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    height: 20px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.text-purple {
+    color: #5c297c;
+    font-size: 1.5rem;
+    text-align: center;
+}

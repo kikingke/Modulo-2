@@ -1,0 +1,46 @@
+#father-container-cards {
+    width: 75%;
+}
+#container-cards {
+    height: 14em;
+    border-radius: 11px;
+}
+
+.button-sound {
+    width: 100px;
+    border-radius: 11px;
+}
+.button-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 0rem;
+}
+#btn-ok {
+    color: #7F451D;
+    box-shadow: #7F451D 0px 4px;
+}
+
+@media (max-width: 705px){
+    #father-container-cards p {
+        font-size: 1em !important;
+    }
+}
+@media (max-width: 480px){
+    #father-container-cards p {
+        font-size: 0.7em !important;
+    }
+}
+
+.bg-image{
+    background-image: url('./assets/img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+}
+
+img{
+    object-fit: contain;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../../../../assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+</head>
+<body id="exe-node-0" class="exe-scorm dark bg-transparent">
+<div id="outer">
+    <section id="main" class="container">
+
+        <div class="p-4 bg-image border-radius">
+            <div class="h-100">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn-action-circle" id="prev" onclick="changeWord('prev')">
+                        <img src="./assets/img/button-back-gray.svg" id="img-prev" alt="" width="100%" />
+                    </button>
+
+                    <div id="father-container-cards" class="mx-3">
+                        <p class="subtitle-activity">Listen and record yourself.</p>
+                        <div id="container-cards" class="bg-white cross-center">
+                            
+                        </div>
+                    </div>
+                    
+                    <button class="btn-action-circle" id="next" onclick="changeWord('next')">
+                        <img src="assets/img/button-next.svg" id="img-next" alt="next" width="100%" />
+                    </button>
+                </div>
+
+                <div class="d-flex justify-content-center my-3">
+                    <div id="btn-sound-pronunciation" class="btn-action-circle cursor-pointer me-3">
+                    </div>
+                    <div id="btn-record-pronunciation" class="btn-action-circle cursor-pointer" onclick="record()">
+                        <img src="assets/img/microphone.svg" class="h-100" width="100%" alt="microphone" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- <script src="./js/libraries/responsivevoice.min.js"></script> -->
+<!-- <script src="./js/libraries/jquery.min.js"></script> -->
+<script src="./assets/js/responsivevoice.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

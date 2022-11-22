@@ -1,0 +1,38 @@
+.droppable {
+    height: 8em;
+    border: 2px dashed #ffffff;
+
+}
+
+.draggable {
+    height: 8em;
+}
+
+h3 {
+    font-size: 0.8rem;
+    color: #891510;
+}
+
+.btn-sound {}
+
+.transparent {
+    color: transparent;
+}
+
+.grid {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.bg-image {
+    background-image: url('./assets/img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,55 @@
+/* Drag y drop shapes*/
+.box-container{
+/* width: 200px;
+height: 200px; */
+border-radius: 10px;
+}
+#contenedor-drag {
+width: 76%;
+}
+
+.drag-and-drop{
+border-radius: 10px;
+height: 10em;
+}
+.draggable {
+width: 12%;
+}
+
+.img-size{
+width: 100%;
+padding: 1rem 0;
+}
+
+.img-shape-size-small{
+width: 40px;
+}
+
+.img-shape-size-medium{
+width: 65px;
+}
+
+@media (min-width: 600px) and (max-width: 1024px){
+    .b-responsive{
+        margin-left: 1rem;
+        margin-top: 3rem;
+    }
+
+    .b-responsive2{
+        margin-top: 3rem;
+    }
+
+    .img-size{
+        width: 74px;
+
+    }
+    .box-container{
+        height: 150px;
+    }
+}
+.bg-image{
+    background-image: url('./assets/img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

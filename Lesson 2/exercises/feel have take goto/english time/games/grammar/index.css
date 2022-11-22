@@ -1,0 +1,80 @@
+:root {
+    --color-primary: #009bdc;
+    --color-secondary: #004e6e;
+    --color-third: #a3dbf2;
+    --color-fourth: #ebf7fc;
+}
+
+.droppable {
+    height: 6em;
+    border: 2px dashed #ffffff;
+}
+
+.draggable {
+    height: 6em;
+}
+
+.btn-sound {
+    position: absolute;
+}
+
+.bg-image {
+    background-image: url('./assets/img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+img {
+    object-fit: contain;
+}
+
+.bg-blue-1 {
+    background-color: var(--color-primary);
+}
+
+.bg-blue-2 {
+    background-color: var(--color-secondary);
+}
+
+.bg-blue-3 {
+    background-color: var(--color-third);
+}
+
+.bg-blue-4 {
+    background-color: var(--color-fourth);
+}
+
+.text-blue {
+    color: var(--color-secondary)
+}
+
+.firstSquare {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 100%;
+}
+
+.thirdSquare {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstSquare .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.firstSquare .div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.firstSquare .div3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.firstSquare .div4 {
+    grid-area: 2 / 2 / 3 / 3;
+}

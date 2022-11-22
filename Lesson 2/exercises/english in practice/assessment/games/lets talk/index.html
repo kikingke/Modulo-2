@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <link href="../../../../assets/css/libraries/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../../../../assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+</head>
+
+<body id="exe-node-0" class="exe-scorm dark bg-transparent">
+    <div id="outer">
+        <section id="main" class="container">
+            <div class="bg-image p-4 border-radius">
+                <div class="d-flex justify-content-between align-items-center">
+
+                    <div class="container">
+                        <p class="subtitle-activity">Listen and record yourself.</p>
+                        <div class="row-12 d-flex justify-content-center">
+
+                            <div class="col-3 mx-2 cross-center box-sound cursor-pointer"
+                                onclick="responsiveVoice.speak('How do you feel?', 'US English Female', {rate: 0.85})">
+                                <img src="./assets/img/sound.svg" class="sound">
+                            </div>
+
+                            <div class="col-3 mx-2 cross-center box-sound cursor-pointer"
+                                onclick="responsiveVoice.speak('What do you feel?', 'US English Female', {rate: 0.85})">
+                                <img src="./assets/img/sound.svg" class="sound">
+                            </div>
+
+                            <div class="col-3 mx-2 cross-center box-sound cursor-pointer"
+                                onclick="responsiveVoice.speak('What should you do?', 'US English Female', {rate: 0.85})">
+                                <img src="./assets/img/sound.svg" class="sound">
+                            </div>
+                        </div>
+
+                        <!-- grabar y detener -->
+                        <div class="row-12 d-flex justify-content-center">
+                            <div class="col-3 mx-2 my-3 cross-center box-sound cursor-pointer">
+                                <img src="./assets/img/microphone.svg" id="btn-record" class="grabar">
+                                <img src="./assets/img/pause.svg" alt="pause" id="btn-stop-record" class="grabar">
+                            </div>
+                            <div class="col-3 mx-2 my-3 cross-center box-sound cursor-pointer">
+                                <img src="./assets/img/microphone.svg" id="btn-record-2" class="grabar">
+                                <img src="./assets/img/pause.svg" alt="pause" id="btn-stop-record-2" class="grabar">
+                            </div>
+                            <div class="col-3 mx-2 my-3 cross-center box-sound cursor-pointer">
+                                <img src="./assets/img/microphone.svg" id="btn-record-3" class="grabar">
+                                <img src="./assets/img/pause.svg" alt="pause" id="btn-stop-record-3" class="grabar">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/responsivevoice.min.js"></script>
+    <script src="./../../../../assets/js/index.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

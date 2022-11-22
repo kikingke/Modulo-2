@@ -1,0 +1,63 @@
+.box-sound{
+    background-color: white;
+    padding: 55px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: #58186b 0px 4px;
+}
+
+.sound{
+    width: 40%;   
+}
+
+.grabar{
+    width: 25%;
+    margin-left: 16px;
+}
+
+#father-container-cards {
+    width: 75%;
+}
+
+#container-cards {
+    height: 20em;
+    border-radius: 11px;
+}
+
+.button-navigation {
+    width: 3em;
+    height: 3em;
+}
+
+.button-pronunciation {
+    height: 3em;
+}
+
+@media (max-width: 705px){
+    #father-container-cards p {
+        font-size: 1em !important;
+    }
+}
+
+@media (max-width: 480px){
+    #father-container-cards p {
+        font-size: 0.7em !important;
+    }
+}
+
+.bg-image{
+    background-image: url('./assets/img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+img{
+    object-fit: contain;
+}
+
+.content-img img{
+    object-fit: contain;
+    max-width: 4rem;
+    height: auto;
+}

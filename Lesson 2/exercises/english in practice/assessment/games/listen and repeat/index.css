@@ -1,0 +1,38 @@
+#father-container-cards {
+    width: 75%;
+}
+#container-cards {
+    height: 17em;
+    border-radius: 11px;
+    /* box-shadow: #701B15 0px 5px; */
+}
+.button-navigation {
+    width: 3em;
+    height: 3em;
+}
+.button-pronunciation {
+    width: 3em;
+}
+
+@media (max-width: 705px){
+    #father-container-cards p {
+        font-size: 1em !important;
+    }
+}
+@media (max-width: 480px){
+    #father-container-cards p {
+        font-size: 0.7em !important;
+    }
+}
+
+
+.bg-image{
+    background-image: url('./assets/img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+img{
+    object-fit: contain;
+}

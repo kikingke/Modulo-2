@@ -1,0 +1,273 @@
+@font-face {
+    src: url('./typografy/KGSecondChancesSolid.ttf');
+    font-family: 'KG Second Chances Solid';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'KG Second Chances Solid';
+}
+
+:root {
+    --cursor: url('../../../images/template/Cursor.png'), pointer;
+
+    --color-primary: #b752f7;
+    --color-secondary: #5d2a7d;
+
+    --color-third: #ff9218;
+    --color-third-light: #ffba6d;
+    --color-third-dark: #804a0c;
+
+    --color-title: var(--color-secondary);
+    --color-subtitle: var(--color-primary);
+    --color-text: black;
+
+    --color-title-activity: white;
+    --color-shadow-title-activity: black;
+
+    --color-subtitle-activity: white;
+    --color-shadow-subtitle-activity: black;
+
+    --bg-image-body: url('./../../../images/template/background-activity.jpg');
+
+    --font-family: 'KG Second Chances Solid';
+    --border-radius: 1rem;
+    --border-radius-btn: var(--border-radius);
+
+    --font-size-btn-activity: 28px;
+    --font-size-title: 32px;
+    --font-size-subtitle: 18px;
+    --font-size-title-activity: 42px;
+    --font-size-subtitle-activity: 32px;
+    --font-size-text: 16px;
+
+    --size-btn-action-circle: 3rem;
+    --scrollbar-width: 15px;
+    --scrollbar-height: 10px;
+    --scrollbar-bg: var(--color-third);
+    --scrollbar-color: #eaeaea;
+
+    /* Juegos */
+    --flashcard-btn-bg: white;
+    --flashcard-btn-size: 18px;
+    --flashcard-btn-border-radius: var(--border-radius);
+}
+
+.full-container {
+    overflow: hidden;
+    min-height: 100vh;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-sections {
+    height: calc(100vh - 95px);
+}
+
+#content-sections iframe {
+    height: 100%;
+    width: 100%;
+}
+
+a,
+button,
+.botones-superiores {
+    cursor: var(--cursor) !important;
+}
+
+.cross-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border-radius {
+    border-radius: var(--border-radius) !important;
+}
+
+.title {
+    color: var(--color-title);
+    font-size: var(--font-size-title);
+}
+
+.subtitle {
+    color: var(--color-subtitle);
+    font-size: var(--font-size-subtitle);
+}
+
+.title-activity {
+    font-size: var(--font-size-title-activity);
+    display: inline-block;
+    color: var(--color-title-activity);
+    text-shadow: 0px 6px 0px var(--color-shadow-title-activity);
+    -webkit-text-stroke: 1px var(--color-shadow-title-activity);
+}
+
+.subtitle-activity {
+    display: block;
+    text-align: center;
+    color: var(--color-subtitle-activity);
+    text-shadow: 0px 2px 0px var(--color-shadow-subtitle-activity);
+    -webkit-text-stroke: 1px var(--color-shadow-subtitle-activity);
+    font-size: var(--font-size-subtitle-activity);
+}
+
+.custom-scrollbar {
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar:vertical {
+    width: var(--scrollbar-width);
+}
+
+.custom-scrollbar::-webkit-scrollbar-button:increment,
+.custom-scrollbar::-webkit-scrollbar-button {
+    display: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar:horizontal {
+    height: var(--scrollbar-height);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-bg);
+    border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-color);
+}
+
+.content-btns-activity {
+    transform: translateY(-25px);
+    padding-inline: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.btn-activity {
+    background-color: white;
+}
+
+div.btn-activity img {
+    display: none;
+}
+
+div.btn-activity~.btn-activity {
+    --font-size-btn-activity: 15px;
+}
+
+.btn-activity {
+    font-size: var(--font-size-btn-activity);
+    border-radius: var(--border-radius-btn);
+    background-color: var(--color-primary);
+    box-shadow: 0 7px var(--color-secondary);
+    -webkit-text-stroke: 1px var(--color-primary);
+    border: 1px solid transparent;
+    color: white;
+    text-decoration: none;
+    transition: all linear 0.3s;
+    cursor: var(--cursor);
+    position: relative;
+    top: 0;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.btn-activity:has(img) img {
+    width: 0.8em;
+}
+
+.btn-activity:hover {
+    background-color: var(--color-third);
+    box-shadow: 0 7px var(--color-third-dark);
+    border: 1px solid var(--color-third-light);
+    color: white;
+    -webkit-text-stroke: 1px var(--color-third-dark);
+    text-decoration: none;
+}
+
+.btn-activity:active {
+    top: 10px;
+    box-shadow: 0 0 transparent;
+}
+
+.btn-action-circle {
+    width: var(--size-btn-action-circle);
+    height: var(--size-btn-action-circle);
+    min-width: var(--size-btn-action-circle);
+    min-height: var(--size-btn-action-circle);
+    border: 0;
+    padding: 0;
+    border-radius: 100%;
+}
+
+.btn-action-circle:not(:nth-last-of-type(1)) {
+    margin-right: 0.5rem;
+}
+
+.content-cards {
+    position: relative;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.content-cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-cards--description {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    white-space: nowrap;
+    color: var(--color-subtitle-activity);
+    transform: translateX(-50%);
+    font-size: var(--font-size-btn-activity);
+    -webkit-text-stroke: 1px var(--color-shadow-subtitle-activity);
+}
+
+.swiper-flashcards {
+    margin-inline: 1rem;
+}
+
+.swiper-flashcards .swiper-slide {
+    font-size: var(--flashcard-btn-size);
+    background: var(--flashcard-btn-bg);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--flashcard-btn-border-radius);
+    padding: 0.5rem 1rem;
+    transition: all linear 0.3s;
+}
+
+.swiper-flashcards .swiper-slide.active,
+.swiper-flashcards .swiper-slide:active {
+    color: white;
+    letter-spacing: 2px;
+    box-shadow: none !important;
+}
+
+.cursor-pointer {
+    cursor: var(--cursor) !important;
+}

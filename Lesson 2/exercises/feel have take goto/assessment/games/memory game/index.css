@@ -1,0 +1,152 @@
+.questions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.questioncard {
+    height: 133px;
+    width: 44%;
+    text-align: center;
+    margin: 0.2em;
+    display: flex;
+    flex-direction: column-reverse;
+
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:1440px) {
+    .questioncard {
+        height: 88px;
+        width: 39%;
+    }
+}
+
+@media (max-width:1024px) {
+    .questioncard {
+        height: 77px;
+        width: 33%;
+        text-align: center;
+        margin: 0.2em;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:768px) {
+    .questioncard {
+        height: 78px;
+        width: 32%;
+        text-align: center;
+        margin: 0.2em;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.questioncard span {
+    position: relative;
+    top: 46px;
+}
+
+.cards {
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 22%;
+    height: 75px;
+    margin: 0.3em;
+    background-color: #ffffff52;
+    transition: 0.3s all ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s all ease;
+}
+
+/*for text*/
+.card p {
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s all ease;
+    color: #004e6e;
+}
+
+.card.clicked {
+    background-color: white;
+    border: none;
+}
+
+.card.checked {
+    background-color: lightgreen;
+    visibility: hidden;
+    opacity: 0;
+    border: none;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.card.clicked img,
+.card.checked img {
+    opacity: 1;
+}
+
+/*for text*/
+.card.clicked p,
+.card.checked p {
+    opacity: 1;
+}
+
+.card.shake {
+    animation: shake 0.5s;
+}
+
+.bg-image {
+    background-image: url('./assets/img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.textoInterno {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+img {
+    object-fit: contain
+}
+
+/*MEDIA QUERIES*/
+
+@media(min-width:1080px) {
+    .chg-s {
+        height: 6vw;
+
+    }
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../../../../assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+</head>
+<body id="exe-node-0" class="exe-scorm bg-transparent pt-5">
+<div id="outer">
+    <section id="main" class="container">
+
+        <div class="bg-image p-4 border-radius">
+            <div class="cross-center w-100">
+                <button class="btn-action-circle button-navigation" id="prev" onclick="prevWord()">
+                    <img src="./assets/img/button-back.svg" id="img-prev" alt="prev" width="100%" />
+                </button>
+
+                <div class="mx-3">
+                    <p class="subtitle-activity">Listen and choose the correct option.</p>
+
+                    <div class="pb-2 d-flex justify-content-between w-100">
+                        <div class="bg-white border-radius mb-4 w-100 div-sound">
+                            <div class="cross-center h-100 cursor-pointer"onclick="sound()" id="btn-sound">
+                                <img src="./assets/img/sound-icon.svg" alt="sound_icon" height="60%" />
+                                <div class="d-inline-block ms-1 fw-bold" id="audio-numerator"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 grilla-opciones" id="contenedor-opciones">
+                        
+                    </div>
+                </div>
+
+                <button class="btn-action-circle button-navigation" id="next" onclick="nextWord()">
+                    <img src="./assets/img/button-next.svg" id="img-next" alt="next" width="100%" />
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<script src="./assets/js/responsivevoice.min.js"></script>
+<script src="./assets/js/anime.min.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/sweetalert2.min.js"></script>
+<script src="./assets/js/lodash.min.js"></script>
+<script src="./../../../../assets/js/index.js"></script>
+<script src="./index.js"></script>
+
+</body>
+</html>
